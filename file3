@@ -1,0 +1,33 @@
+commit 44b6f87bfac91d3e8727c817eab0997cdefd9b8c (HEAD -> 1.1_testing)
+Author: galiu <granit.aliu@hotmail.com>
+Date:   Mon Oct 14 13:47:17 2024 +0200
+
+    kjo per File1
+
+:100644 100644 bf09040 edc0635 M        file1
+
+commit b8a8ec0b26366353c6b85786ac61de4faf23eb0c
+Author: galiu <granit.aliu@hotmail.com>
+Date:   Mon Oct 14 13:39:50 2024 +0200
+
+    Me qat rreshtin qe e shtova
+
+:100644 100644 1e9b70d 1d315ba M        file2
+
+commit 85d165bc8a59b8985fcec8f27bf2a8e278601f03
+Author: galiu <granit.aliu@hotmail.com>
+Date:   Tue Oct 8 15:33:55 2024 +0200
+
+    mesazh palidhje
+
+:100644 100644 593a12f 1e9b70d M        file2
+
+commit 0e1646e39ade5be2ba2e90c32cac6730a0792a89 (master)
+Author: galiu <granit.aliu@hotmail.com>
+Date:   Tue Oct 8 15:16:02 2024 +0200
+
+    Comiti i pare me qeta dy fajlla, kqyri mire :P
+
+:000000 100644 0000000 bf09040 A        file1
+:000000 100644 0000000 593a12f A        file2
+
