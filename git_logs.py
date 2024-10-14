@@ -1,25 +1,18 @@
 import subprocess
 
-def display_git_logs(/home/galiu/git_project/):
+def show_git_logs():
     try:
-        # Navigate to the specified repository path
-        result = subprocess.run(
-            ['git', '-C', /home/galiu/git_project/, 'log', '--oneline', '--graph', '--decorate'],
-            text=True,
-            capture_output=True,
-            check=True
-        )
-
-        # Print the captured Git logs
-        print(f"Git logs for repository at '{/home/galiu/git_project/th}':\n")
-        print(result.stdout)
-
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e.stderr}")
-    except FileNotFoundError:
-        print("Git is not installed or the specified repository path is invalid.")
+        # Run the 'git log' command and capture its output
+        result = subprocess.run(['git', 'log'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        
+        # Check if the command was successful
+        if result.returncode == 0:
+            print("Git Logs:\n")
+            print(result.stdout)
+        else:
+            print("Error:", result.stderr)
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    # Specify the path to your Git repository here
-    /home/galiu/git_project/ = "/path/to/your/repository"
-    display_git_logs(/home/galiu/git_project/)
+    show_git_logs()
